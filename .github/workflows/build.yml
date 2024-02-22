@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   publish:
     runs-on: ${{ matrix.os }}
-    if: ${{ startsWith(github.ref, 'refs/tags/v') }}
+    # if: ${{ startsWith(github.ref, 'refs/tags/v') }}
     permissions:
       contents: write
 
